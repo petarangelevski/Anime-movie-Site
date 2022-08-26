@@ -1,0 +1,20 @@
+.text-muted{
+    margin-top: 100%;
+    background-image: url('../images/21a1926ddd463659b1b17a75bdb0c6af.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.footerGenres {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+.footerGenres-genre {
+    padding: 0px 15px 0px 15px;
+}
+.mt-5{
+    max-width: 100%;
+}

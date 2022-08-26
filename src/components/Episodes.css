@@ -1,0 +1,25 @@
+.episodes-page {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.episodes-card {
+    min-width: 23%;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color:#1e1b26;
+    color: white;
+    box-shadow:5px 5px 115px black;
+}
+
+.episodes-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

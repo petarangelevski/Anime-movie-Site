@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.products {
+  display: flex;
+  top: 0px;
+  left: 0px;
+  align-content: center;
+  justify-content: center;
+}
+.single__image__card {
+  background-size: contain;
+  background-size: cover;
+  z-index: 1 !important;
+  width: 375px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  background-color:#1e1b26;
+  box-shadow:5px 5px 115px -14px black;
+  border-radius: 4px;
+}
+.single__image {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.gardian {
+  height: 550px;
+  width: 100%;
+  background-size: contain;
+  background-size: cover;
+  z-index: 111 !important;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, black),
+    color-stop(0.35, black),
+    color-stop(-1, black),
+    color-stop(-1, black),
+    color-stop(-1, rgba(0, 0, 0, 0.6)),
+    color-stop(1, transparent)
+  );
+  position: relative;
+}
+.z-index {
+  
+  color: rgb(248, 248, 248);
+  
+}
+.z-index-naslov {
+  font-size: 1.75rem;
+  margin-bottom: 5px;
+}
+
+.z-index-text {
+  margin-bottom: 10px;
+}
+.single__image__container {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.single__image__card__text {
+  color: wheat;
+  /* padding: 0px 25px; */
+  margin: -10% 20px 0 20px;
+  text-align: justify;
+}
+.single__image__button {
+  top: 934px;
+  left: 890px;
+  width: 140px;
+  height: 30px;
+  border: 2px solid var(--black);
+  border: 2px solid #000000;
+  opacity: 1;
+}
+
+.single__image__button__text {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  font-family: "Lexend Deca", sans-serif;
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--black);
+  text-align: center;
+  font: normal normal 800 14px/18px Lexend Deca;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  margin: 0;
+}
+.single__image__button:hover {
+  background-color: #000000;
+}
+.single__image__button:hover > .single__image__button__text {
+  color: wheat;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}
