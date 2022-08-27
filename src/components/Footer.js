@@ -5,29 +5,29 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 function Footer() {
-  const [allGenres, setAllGenres] = useState([]);
-  const [randomRecommended, setRandomRecommended] = useState([])
-  let navigate = useNavigate();
+  // const [allGenres, setAllGenres] = useState([]);
+  // const [randomRecommended, setRandomRecommended] = useState([])
+  // let navigate = useNavigate();
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const result = await axios(`https://api.jikan.moe/v4/genres/anime`);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const result = await axios(`https://api.jikan.moe/v4/genres/anime`);
 
-      const results = result.data.data;
+  //     const results = result.data.data;
 
-      setAllGenres(results);
-    };
-    fetchData();
-  }, []);
+  //     setAllGenres(results);
+  //   };
+  //   fetchData();
+  // }, []);
 
-  useEffect(() => {
-    const getMultipleRandom = async () => {
-      const shuffled = [...allGenres].sort(() => 0.5 - Math.random());
+  // useEffect(() => {
+  //   const getMultipleRandom = async () => {
+  //     const shuffled = [...allGenres].sort(() => 0.5 - Math.random());
 
-      setRandomRecommended(shuffled.slice(0, 16));
-    };
-    getMultipleRandom();
-  }, [allGenres]);
+  //     setRandomRecommended(shuffled.slice(0, 16));
+  //   };
+  //   getMultipleRandom();
+  // }, [allGenres]);
 
   return (
     <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
@@ -62,9 +62,9 @@ function Footer() {
       <MDBContainer className='text-center text-md-start mt-5'>
         <MDBRow className='mt-3'>
           <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
-          <h6 className='text-uppercase fw-bold mb-4'>Genres</h6>
+          
             <div className="footerGenres">
-              {allGenres.map((item) => {
+              {/* {allGenres.map((item) => {
                 return (
                   <ul className='footerGenres-genre'>
                     <li
@@ -76,7 +76,7 @@ function Footer() {
                     </li>
                   </ul>
                 );
-              })}
+              })} */}
             </div>
           </MDBCol>
 

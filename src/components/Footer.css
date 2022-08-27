@@ -3,19 +3,6 @@
     background-position: center;
     background-size: cover;
 }
-
-.footerGenres {
-    display: flex;
-    list-style-type: none;
-    text-decoration: none;
-    flex-wrap: wrap;
-    color: black;
-}
-
-.footerGenres-genre {
-    padding: 0px 15px 0px 15px;
-    margin: 2px;
-}
 .mt-5{
     max-width: 100%;
 }

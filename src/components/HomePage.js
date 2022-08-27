@@ -17,7 +17,30 @@ function HomePage() {
   const [randomCharacters, setRandomCharacters] = useState([]);
   const [mostPopularAnime, setMostPopularAnime] = useState([]);
   const [randomMostPopularAnime, setRandomMostPopularAnime] = useState([]);
+  const [allGenres, setAllGenres] = useState([]);
+  const [randomGRecommended, setRandomGRecommended] = useState([])
 
+
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios(`https://api.jikan.moe/v4/genres/anime`);
+
+      const results = result.data.data;
+
+      setAllGenres(results);
+    };
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    const getMultipleRandom = async () => {
+      const shuffled = [...allGenres].sort(() => 0.5 - Math.random());
+
+      setRandomGRecommended(shuffled.slice(0, 16));
+    };
+    getMultipleRandom();
+  }, [allGenres]);
 
 
   // useEffect(() => {
@@ -138,6 +161,26 @@ function HomePage() {
                 on Anime-Planet. Create your anime list on Anime-Planet and
                 we'll keep your place when you watch videos on our site.
               </p>
+            </div>
+            <div className="genresPart">
+              <div className="naslov">
+              <h2>GENRES</h2>
+              </div>
+              <div className="genresContent">
+            {allGenres.map((item) => {
+                return (
+                  <ul className='footerGenres-genre'>
+                    <li
+                      className="dropdown-item"
+                      key={item.mal_id}
+                      onClick={(e) => navigate(`/genres/${item.name}/${item.mal_id}`)}
+                    >
+                      {item.name}
+                    </li>
+                  </ul>
+                );
+              })}
+              </div>
             </div>
 
           </div>

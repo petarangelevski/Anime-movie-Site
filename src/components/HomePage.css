@@ -73,10 +73,33 @@ margin-left: 1%;
 .sec1Slide {
     width: 100%;
     display: flex;
-    align-items: center;
+    margin-top: 50px;
 }
 .txtPart{
-    width: 50%;
+    width: 20%;
+}
+.genresPart{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.naslov{
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+}
+.genresContent{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+.footerGenres-genre{
+    padding: 5px;
+    padding-left: 17px;
+    margin: 0%;
 }
 
 .d-block {
