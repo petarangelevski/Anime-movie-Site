@@ -61,9 +61,14 @@ function App() {
         <Route exact path='/characters/:name/:id' element={<><Characters/></>} />
       </Routes>
       
+      <div className="footer">
       <Footer/>
       </div>
+      </div>
+     
+    
     </BrowserRouter>
+    
   );
 }
 
