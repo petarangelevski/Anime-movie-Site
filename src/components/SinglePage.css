@@ -17,6 +17,7 @@
   background-color:#1e1b26;
   box-shadow:5px 5px 115px -14px black;
   border-radius: 4px;
+  margin-top: 5px;
 }
 .single__image {
   display: flex;
