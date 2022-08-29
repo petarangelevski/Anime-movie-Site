@@ -12,6 +12,8 @@ import Genres from "./components/genres/Genres";
 import Footer from "./components/Footer";
 import SingleGenre from "./components/SingleGenre";
 import Characters from "./components/Characters";
+import Podheader from "./components/Podheader";
+import './App.css'
 
 function App() {
   // const [genreList, setGenreList] = useState([]);
@@ -51,7 +53,10 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        <div className="headers">
+        <Podheader/>
         <Header handleCategoryChange={handleCategoryChange} />
+        </div>
       <Routes>
         <Route path="/" element={<><HomePage/></>}/>
         <Route path='/:page' element={<><Home/></>}/>

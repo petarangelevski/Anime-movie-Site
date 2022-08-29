@@ -1,13 +1,13 @@
-.App {
-  text-align: center;
-display: flex;
 
+.headers{
+  height: 200px;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -30,6 +30,7 @@ display: flex;
   color: #61dafb;
 }
 
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -38,6 +39,4 @@ display: flex;
     transform: rotate(360deg);
   }
 }
-.footer {
 
-}
